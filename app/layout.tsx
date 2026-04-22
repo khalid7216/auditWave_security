@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Share_Tech_Mono, Bebas_Neue, DM_Sans } from "next/font/google";
 import ScrollObserver from "@/components/ScrollObserver";
+import JsonLd from "@/components/JsonLd";
 import "./globals.css";
 
 const shareTechMono = Share_Tech_Mono({
@@ -27,14 +28,43 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Audit Wave Security — Web Penetration Tester",
-  description: "Web Penetration Tester & Bug Bounty Hunter | Audit Wave Security",
+  metadataBase: new URL("https://audit-wave-security.vercel.app"),
+  title: "Khalid Hussain — Web Penetration Tester | AuditWave Security",
+  description: "3+ years, 1200+ targets tested. Reported vulnerabilities to Airbnb, Dyson, Inditex, Freshworks. Bug bounty researcher & freelance pentester.",
+  keywords: ["Web Penetration Tester", "Bug Bounty Hunter", "Cybersecurity Audit", "Ethical Hacker", "AuditWave Security", "Security Researcher"],
+  authors: [{ name: "Khalid Hussain" }],
+  creator: "Khalid Hussain",
   icons: {
     icon: "/android-chrome-192x192.png",
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
   manifest: "/site.webmanifest",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Khalid Hussain — Web Penetration Tester | AuditWave Security",
+    description: "3+ years, 1200+ targets tested. Reported vulnerabilities to Airbnb, Dyson, Inditex, Freshworks. Bug bounty researcher & freelance pentester.",
+    url: "https://audit-wave-security.vercel.app",
+    siteName: "AuditWave Security",
+    images: [
+      {
+        url: "/wave.webp",
+        width: 1200,
+        height: 630,
+        alt: "AuditWave Security — Web Penetration Testing",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Khalid Hussain — Web Penetration Tester | AuditWave Security",
+    description: "3+ years, 1200+ targets tested. Reported vulnerabilities to Airbnb, Dyson, Inditex, Freshworks. Bug bounty researcher & freelance pentester.",
+    images: ["/wave.webp"],
+  },
 };
 
 export default function RootLayout({
@@ -48,6 +78,7 @@ export default function RootLayout({
         className={`${shareTechMono.variable} ${bebasNeue.variable} ${dmSans.variable} antialiased font-body bg-bg text-text`}
         suppressHydrationWarning
       >
+        <JsonLd />
         <ScrollObserver />
         {children}
       </body>

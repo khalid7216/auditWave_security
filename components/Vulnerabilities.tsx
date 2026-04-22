@@ -6,50 +6,50 @@ const vulnerabilities = [
   {
     id: 1,
     severity: "high",
-    type: "Cross-Site Scripting (XSS)",
-    desc: "Reflected XSS via unsanitised user input in search parameter. Allowed attacker-controlled script execution in victim's browser, leading to potential session hijacking.",
-    status: "Fixed & Acknowledged",
-    platform: "Responsible Disclosure"
+    type: "Blind SSRF via Open Redirect Parameter",
+    desc: "Target: Airbnb — Exploited an open redirect to reach internal metadata services, potentially exposing cloud credentials.",
+    status: "Reported",
+    platform: "HackerOne"
   },
   {
     id: 2,
-    severity: "critical",
-    type: "Insecure Direct Object Reference (IDOR)",
-    desc: "IDOR vulnerability exposing other users' private data by manipulating user ID parameters in API calls. No authorisation checks on sensitive endpoints.",
-    status: "Fixed & Acknowledged",
-    platform: "Bug Bounty"
+    severity: "high",
+    type: "Business Logic Bypass — Client-Side Response Tampering",
+    desc: "Target: Inditex (Pull & Bear) — Manipulated server response on the client-side to spoof successful payment confirmation.",
+    status: "Reported",
+    platform: "HackerOne"
   },
   {
     id: 3,
     severity: "high",
-    type: "Missing Security Headers",
-    desc: "Multiple domains found lacking critical HTTP security headers including HSTS, CSP, X-Frame-Options — leaving users exposed to clickjacking and protocol downgrade attacks.",
-    status: "Fixed & Acknowledged",
-    platform: "Direct Disclosure · Nick"
+    type: "Session Impersonation via Full Cookie Replacement",
+    desc: "Target: Dyson — Identified a vulnerability allowing for complete session takeover by replacing authentication cookies.",
+    status: "Reported",
+    platform: "HackerOne"
   },
   {
     id: 4,
-    severity: "medium",
-    type: "Sensitive Information Disclosure",
-    desc: "Application exposing internal server paths, software versions, and config details in error responses — enabling targeted reconnaissance for further attacks.",
-    status: "Fixed",
+    severity: "high",
+    type: "IDOR on Agent Profile Edit",
+    desc: "Target: Freshworks — Insecure Direct Object Reference allowed editing and returning sensitive data of other agent profiles.",
+    status: "Reported",
     platform: "HackerOne"
   },
   {
     id: 5,
     severity: "high",
-    type: "Broken Authentication",
-    desc: "Weak session token generation and absent brute-force protection on login endpoint allowed account takeover via credential stuffing and session prediction attacks.",
-    status: "Acknowledged",
-    platform: "Bugcrowd"
+    type: "Subdomain Takeover via OneSignal",
+    desc: "Target: Magic Eden — Successfully identified and claimed a subdomain vulnerable to takeover via misconfigured OneSignal settings.",
+    status: "Reported",
+    platform: "HackerOne"
   },
   {
     id: 6,
-    severity: "medium",
-    type: "Open Redirect",
-    desc: "Unvalidated redirect parameter allowed attackers to craft phishing URLs under a trusted domain, redirecting victims to malicious external sites post-authentication.",
-    status: "Fixed",
-    platform: "Direct Disclosure"
+    severity: "high",
+    type: "WordPress Admin/Users Disclosure",
+    desc: "Target: Arkose Labs — Information disclosure vulnerability exposing WordPress administrative details and user lists.",
+    status: "Reported",
+    platform: "HackerOne"
   }
 ];
 

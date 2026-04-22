@@ -78,7 +78,9 @@ export default function Hero() {
           I find vulnerabilities before the bad guys do. Specialising in deep target enumeration, manual-first methodology, and responsible disclosure — with acknowledged reports across multiple platforms and programmes.
         </p>
         
-        <div className="flex gap-4 flex-wrap animate-fade-down [animation-delay:400ms]">
+        <p className="font-mono text-[11px] text-accent tracking-[2px] mb-8 animate-fade-down [animation-delay:200ms] uppercase">Reported to Airbnb, Dyson, Inditex, Freshworks, Magic Eden and 1,200+ other targets.</p>
+      
+      <div className="flex gap-4 flex-wrap animate-fade-down [animation-delay:400ms]">
           <Link href="#vulns" className="inline-flex items-center gap-2 bg-accent text-black font-mono text-[12px] font-bold tracking-[2px] uppercase py-3.5 px-7 rounded-[3px] transition-all duration-200 hover:bg-white hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(0,212,255,0.3)]">
             <Bug size={18} /> View Vulnerabilities
           </Link>
@@ -88,12 +90,12 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="static md:absolute mt-12 md:mt-0 bottom-[60px] right-6 md:right-12 flex gap-12 z-10 animate-fade-up md:justify-start">
+      <div className="static md:absolute mt-12 md:mt-0 bottom-[60px] right-6 md:right-12 flex flex-wrap md:flex-nowrap gap-8 md:gap-12 z-10 animate-fade-up md:justify-start">
         <div className="text-right">
           <div className="font-display text-[42px] text-white leading-[1]">
-            <Counter end={3} suffix="+" />
+            <Counter end={1200} suffix="+" />
           </div>
-          <div className="font-mono text-[10px] text-muted tracking-[2px] uppercase">Hall of Fame</div>
+          <div className="font-mono text-[10px] text-muted tracking-[2px] uppercase">Targets Tested</div>
         </div>
         <div className="text-right">
           <div className="font-display text-[42px] text-white leading-[1]">
@@ -106,6 +108,12 @@ export default function Hero() {
             <Counter end={80} suffix="%" />
           </div>
           <div className="font-mono text-[10px] text-muted tracking-[2px] uppercase">Manual Testing</div>
+        </div>
+        <div className="text-right">
+          <div className="font-display text-[42px] text-white leading-[1]">
+            <Counter end={10} suffix="+" />
+          </div>
+          <div className="font-mono text-[10px] text-muted tracking-[2px] uppercase">Global Brands</div>
         </div>
       </div>
     </div>
