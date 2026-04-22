@@ -50,10 +50,10 @@ export const metadata: Metadata = {
     siteName: "AuditWave Security",
     images: [
       {
-        url: "/wave.webp",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "AuditWave Security — Web Penetration Testing",
+        alt: "Khalid Hussain — Web Penetration Tester | AuditWave Security",
       },
     ],
     locale: "en_US",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Khalid Hussain — Web Penetration Tester | AuditWave Security",
     description: "3+ years, 1200+ targets tested. Reported vulnerabilities to Airbnb, Dyson, Inditex, Freshworks. Bug bounty researcher & freelance pentester.",
-    images: ["/wave.webp"],
+    images: ["/og-image.png"],
   },
 };
 
