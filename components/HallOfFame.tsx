@@ -1,3 +1,5 @@
+import { CheckCircle2 } from "lucide-react";
+
 export default function HallOfFame() {
   return (
     <section id="hall" className="py-[100px] px-6 md:px-12 max-w-[1200px] mx-auto border-t border-border">
@@ -21,7 +23,7 @@ export default function HallOfFame() {
             "Just realised I totally forgot to implement it on these domains. Thank you for the heads up. Really nice and appreciated of you."
           </p>
           <div className="mt-4 inline-flex items-center gap-1.5 font-mono text-[10px] text-accent3 tracking-[1px] bg-accent3/10 border border-accent3/20 py-1 px-2.5 rounded-[3px]">
-            ✓ Security Issue Acknowledged
+            <CheckCircle2 size={12} /> Security Issue Acknowledged
           </div>
         </div>
 
@@ -37,7 +39,7 @@ export default function HallOfFame() {
             "Thanks, I appreciate the heads up!"
           </p>
           <div className="mt-4 inline-flex items-center gap-1.5 font-mono text-[10px] text-accent3 tracking-[1px] bg-accent3/10 border border-accent3/20 py-1 px-2.5 rounded-[3px]">
-            ✓ Responsible Disclosure
+            <CheckCircle2 size={12} /> Responsible Disclosure
           </div>
         </div>
 
@@ -53,7 +55,7 @@ export default function HallOfFame() {
             "Thank you for pointing out the security issue on our website. We appreciate your input and are taking steps to correct the problem."
           </p>
           <div className="mt-4 inline-flex items-center gap-1.5 font-mono text-[10px] text-accent3 tracking-[1px] bg-accent3/10 border border-accent3/20 py-1 px-2.5 rounded-[3px]">
-            ✓ Tomorrow Web Design — Founder
+            <CheckCircle2 size={12} /> Tomorrow Web Design — Founder
           </div>
         </div>
       </div>

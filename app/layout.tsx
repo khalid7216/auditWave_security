@@ -27,8 +27,14 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Khalid Hussain — Web Penetration Tester",
-  description: "Web Penetration Tester & Bug Bounty Hunter",
+  title: "Audit Wave Security — Web Penetration Tester",
+  description: "Web Penetration Tester & Bug Bounty Hunter | Audit Wave Security",
+  icons: {
+    icon: "/android-chrome-192x192.png",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
