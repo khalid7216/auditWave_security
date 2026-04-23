@@ -28,7 +28,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://audit-wave-security.vercel.app"),
+  metadataBase: new URL("https://aw.khalidsanawer.online"),
   title: "Khalid Sanawer — Web Penetration Tester | AuditWave Security",
   description: "3+ years, 1200+ targets tested. Reported vulnerabilities to Airbnb, Dyson, Inditex, Freshworks. Bug bounty researcher & freelance pentester.",
   keywords: ["Web Penetration Tester", "Bug Bounty Hunter", "Cybersecurity Audit", "Ethical Hacker", "AuditWave Security", "Security Researcher"],
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Khalid Sanawer — Web Penetration Tester | AuditWave Security",
     description: "3+ years, 1200+ targets tested. Reported vulnerabilities to Airbnb, Dyson, Inditex, Freshworks. Bug bounty researcher & freelance pentester.",
-    url: "https://audit-wave-security.vercel.app",
+    url: "https://aw.khalidsanawer.online",
     siteName: "AuditWave Security",
     images: [
       {

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://audit-wave-security.vercel.app/sitemap.xml',
+    sitemap: 'https://aw.khalidsanawer.online/sitemap.xml',
   }
 }

@@ -4,12 +4,12 @@ export default function JsonLd() {
     "@type": ["Person", "ProfessionalService"],
     "name": "Khalid Sanawer",
     "jobTitle": "Web Penetration Tester",
-    "url": "https://audit-wave-security.vercel.app",
-    "image": "https://audit-wave-security.vercel.app/wave.webp",
+    "url": "https://aw.khalidsanawer.online",
+    "image": "https://aw.khalidsanawer.online/wave.webp",
     "sameAs": [
       "https://hackerone.com/cyberarmor72",
       "https://bugcrowd.com/cyberarmor72",
-      "https://audit-wave-security.vercel.app"
+      "https://aw.khalidsanawer.online"
     ],
     "description": "Professional Web Penetration Tester & Security Researcher specializing in deep target enumeration and manual-first methodology.",
     "address": {
@@ -19,7 +19,7 @@ export default function JsonLd() {
     "brand": {
       "@type": "Brand",
       "name": "AuditWave Security",
-      "logo": "https://audit-wave-security.vercel.app/wave.webp"
+      "logo": "https://aw.khalidsanawer.online/wave.webp"
     }
   };
 

@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
  
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://audit-wave-security.vercel.app'
+  const baseUrl = 'https://aw.khalidsanawer.online'
   
   return [
     {
