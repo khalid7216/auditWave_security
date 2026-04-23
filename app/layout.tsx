@@ -29,11 +29,11 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://audit-wave-security.vercel.app"),
-  title: "Khalid Hussain — Web Penetration Tester | AuditWave Security",
+  title: "Khalid Sanawer — Web Penetration Tester | AuditWave Security",
   description: "3+ years, 1200+ targets tested. Reported vulnerabilities to Airbnb, Dyson, Inditex, Freshworks. Bug bounty researcher & freelance pentester.",
   keywords: ["Web Penetration Tester", "Bug Bounty Hunter", "Cybersecurity Audit", "Ethical Hacker", "AuditWave Security", "Security Researcher"],
-  authors: [{ name: "Khalid Hussain" }],
-  creator: "Khalid Hussain",
+  authors: [{ name: "Khalid Sanawer" }],
+  creator: "Khalid Sanawer",
   icons: {
     icon: "/android-chrome-192x192.png",
     shortcut: "/favicon.ico",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Khalid Hussain — Web Penetration Tester | AuditWave Security",
+    title: "Khalid Sanawer — Web Penetration Tester | AuditWave Security",
     description: "3+ years, 1200+ targets tested. Reported vulnerabilities to Airbnb, Dyson, Inditex, Freshworks. Bug bounty researcher & freelance pentester.",
     url: "https://audit-wave-security.vercel.app",
     siteName: "AuditWave Security",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Khalid Hussain — Web Penetration Tester | AuditWave Security",
+        alt: "Khalid Sanawer — Web Penetration Tester | AuditWave Security",
       },
     ],
     locale: "en_US",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Khalid Hussain — Web Penetration Tester | AuditWave Security",
+    title: "Khalid Sanawer — Web Penetration Tester | AuditWave Security",
     description: "3+ years, 1200+ targets tested. Reported vulnerabilities to Airbnb, Dyson, Inditex, Freshworks. Bug bounty researcher & freelance pentester.",
     images: ["/og-image.png"],
   },

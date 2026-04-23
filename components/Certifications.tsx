@@ -9,7 +9,7 @@ export default function Certifications() {
       <h2 className="font-display text-[clamp(36px,5vw,60px)] text-white tracking-[2px] mb-12 leading-[1]">
         CREDENTIALS
       </h2>
-      
+
       <div className="flex items-center gap-8 bg-panel border border-border rounded-[6px] p-10 max-w-[700px] relative overflow-hidden transition-all duration-300 hover:border-accent/30 hover:-translate-y-1 after:content-[''] after:absolute after:inset-0 after:bg-gradient-to-br after:from-accent/5 after:to-transparent after:pointer-events-none reveal">
         <div className="text-accent shrink-0"><Award size={48} /></div>
         <div>
@@ -20,7 +20,7 @@ export default function Certifications() {
             Practical Bug Bounty Hunting for Hackers &amp; Pentesters
           </div>
           <div className="font-mono text-[12px] text-muted">
-            Awarded to: Khalid Hussain &nbsp;·&nbsp; Validation of Course Completion
+            Awarded to: Khalid Sanawer &nbsp;·&nbsp; Validation of Course Completion
           </div>
         </div>
       </div>

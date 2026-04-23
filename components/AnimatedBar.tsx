@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from "react";
 
+
 interface AnimatedBarProps {
   width: string;
   duration?: number;
@@ -32,9 +33,9 @@ export default function AnimatedBar({ width, duration = 2000, className = "" }: 
 
   return (
     <div className="h-[6px] bg-border rounded-[3px] overflow-hidden" ref={barRef}>
-      <div 
+      <div
         className={`h-full rounded-[3px] origin-left transition-all ease-out ${className}`}
-        style={{ 
+        style={{
           width: inView ? width : "0%",
           transitionDuration: `${duration}ms`
         }}

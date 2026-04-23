@@ -65,8 +65,8 @@ export default function Hero() {
         
         <h1 className="font-display text-[clamp(56px,9vw,110px)] leading-[0.9] text-white tracking-[2px] mb-2 animate-fade-down [animation-delay:100ms]">
           KHALID<br />
-          <span className="text-accent">HUS</span>
-          <span className="text-accent2">SAIN</span>
+          <span className="text-accent">SAN</span>
+          <span className="text-accent2">AWER</span>
         </h1>
         
         <p className="font-mono text-[14px] text-muted tracking-[3px] uppercase mb-8 min-h-[24px] animate-fade-down [animation-delay:200ms]">

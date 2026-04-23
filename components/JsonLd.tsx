@@ -2,7 +2,7 @@ export default function JsonLd() {
   const schema = {
     "@context": "https://schema.org",
     "@type": ["Person", "ProfessionalService"],
-    "name": "Khalid Hussain",
+    "name": "Khalid Sanawer",
     "jobTitle": "Web Penetration Tester",
     "url": "https://audit-wave-security.vercel.app",
     "image": "https://audit-wave-security.vercel.app/wave.webp",
