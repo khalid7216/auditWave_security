@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Navbar() {
@@ -22,6 +22,7 @@ export default function Navbar() {
         <li><Link href="#hall" className="font-mono text-[11px] text-muted no-underline tracking-[1px] uppercase transition-colors duration-200 hover:text-accent">Hall of Fame</Link></li>
         <li><Link href="#certs" className="font-mono text-[11px] text-muted no-underline tracking-[1px] uppercase transition-colors duration-200 hover:text-accent">Certs</Link></li>
         <li><Link href="/services" className="font-mono text-[11px] text-muted no-underline tracking-[1px] uppercase transition-colors duration-200 hover:text-accent">Security Packages</Link></li>
+        <li><Link href="/blog" className="font-mono text-[11px] text-muted no-underline tracking-[1px] uppercase transition-colors duration-200 hover:text-accent">Blog</Link></li>
         <li><Link href="#contact" className="font-mono text-[11px] text-muted no-underline tracking-[1px] uppercase transition-colors duration-200 hover:text-accent">Contact</Link></li>
       </ul>
     </nav>

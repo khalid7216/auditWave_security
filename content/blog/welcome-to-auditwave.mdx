@@ -1,0 +1,48 @@
+---
+title: "How I Found a Subdomain Takeover on a Global Platform"
+date: "2026-04-23"
+excerpt: "A walkthrough of my methodology on how I discovered and responsibly reported a critical subdomain takeover on a major global e-commerce platform."
+tags: ["subdomain-takeover", "bug-bounty"]
+---
+
+# How I Found a Subdomain Takeover on a Global Platform
+
+Subdomain takeover is a critical vulnerability that allows an attacker to gain control over a legitimate subdomain of a target organization. This happens when a subdomain points to a service (like an AWS S3 bucket, a GitHub Pages site, or a Heroku app) that has been decommissioned but the DNS record still exists.
+
+## The Discovery
+
+While performing deep target enumeration on a global platform, I noticed several subdomains pointing to a specific cloud provider. Most of them were active, but one in particular caught my eye: `dev-assets.target-platform.com`.
+
+I used `dig` to check the CNAME:
+```bash
+dig dev-assets.target-platform.com
+```
+It was pointing to `target-assets-prod.s3.amazonaws.com`.
+
+When I visited the URL in my browser, I saw the following XML:
+```xml
+<Error>
+  <Code>NoSuchBucket</Code>
+  <Message>The specified bucket does not exist</Message>
+  <BucketName>target-assets-prod</BucketName>
+</Error>
+```
+
+## The Exploitation (Proof of Concept)
+
+This `NoSuchBucket` error is a classic indicator that the S3 bucket has been deleted, but the CNAME record still points to it. I immediately attempted to claim the bucket in my own AWS account.
+
+1.  Log in to AWS Console.
+2.  Go to S3.
+3.  Create bucket named `target-assets-prod` in the same region.
+4.  Upload a simple `index.html`.
+
+Success! The subdomain was now serving my content.
+
+## Responsible Disclosure
+
+I immediately terminated the bucket to prevent any actual takeover and reported the finding through their Bug Bounty program. Within 2 hours, the report was triaged as **Critical**, and the DNS record was removed within 24 hours.
+
+## Key Takeaways
+
+Always keep your DNS records tidy. If you delete a service, delete the corresponding DNS record immediately. Monitoring for `404` or `NoSuchBucket` responses on your subdomains is a great way to catch these before attackers do.
