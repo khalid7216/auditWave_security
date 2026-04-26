@@ -4,6 +4,8 @@ import Footer from '@/components/Footer'
 import { getAllPosts } from '@/lib/blog'
 import { Calendar, Clock, Tag, ArrowRight } from 'lucide-react'
 
+import Breadcrumbs from '@/components/Breadcrumbs'
+
 export const metadata = {
   title: 'Blog | AuditWave Security',
   description: 'Cybersecurity research, bug bounty walkthroughs, and web penetration testing insights by Khalid Sanawer.',
@@ -17,6 +19,12 @@ export default function BlogListing() {
       <Navbar />
       
       <div className="pt-[150px] pb-[100px] px-6 md:px-12 max-w-[1200px] mx-auto">
+        <Breadcrumbs 
+          items={[
+            { label: 'Blog', href: '/blog' }
+          ]} 
+        />
+
         <header className="mb-16">
           <div className="font-mono text-[11px] text-accent2 tracking-[3px] uppercase mb-3 flex items-center gap-3 after:content-[''] after:flex-1 after:h-[1px] after:bg-border after:max-w-[80px]">
             08 — Blog Archives

@@ -6,8 +6,34 @@ import Footer from '@/components/Footer'
 import Link from 'next/link'
 import { ChevronLeft, Calendar, Clock, Tag } from 'lucide-react'
 
+import Breadcrumbs from '@/components/Breadcrumbs'
+
 interface PostPageProps {
   params: Promise<{ slug: string }>
+}
+
+export async function generateMetadata({ params }: PostPageProps) {
+  const { slug } = await params
+  const post = getPostBySlug(slug)
+  
+  if (!post) return {}
+
+  return {
+    title: `${post.title} | AuditWave Security`,
+    description: post.excerpt,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: 'article',
+      publishedTime: post.date,
+      authors: ['Khalid Sanawer'],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt,
+    }
+  }
 }
 
 export async function generateStaticParams() {
@@ -30,6 +56,13 @@ export default async function PostPage({ params }: PostPageProps) {
       <Navbar />
 
       <article className="pt-[150px] pb-[100px] px-6 md:px-12 max-w-[800px] mx-auto">
+        <Breadcrumbs 
+          items={[
+            { label: 'Blog', href: '/blog' },
+            { label: post.title, href: `/blog/${post.slug}` }
+          ]} 
+        />
+
         <Link 
           href="/blog" 
           className="inline-flex items-center gap-2 font-mono text-[11px] text-muted uppercase tracking-[2px] mb-12 hover:text-accent transition-colors group"
