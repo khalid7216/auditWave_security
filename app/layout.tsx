@@ -79,8 +79,8 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <JsonLd />
-        <ScrollObserver />
         {children}
+        <ScrollObserver />
       </body>
     </html>
   );
