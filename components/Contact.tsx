@@ -4,11 +4,8 @@ export default function Contact() {
   return (
     <section id="contact" className="py-[100px] px-6 md:px-12 max-w-[1200px] mx-auto border-t border-border text-center">
       <div className="max-w-[600px] mx-auto">
-        <div className="font-mono text-[11px] text-accent2 tracking-[3px] uppercase mb-3 flex items-center justify-center gap-3 after:content-[''] after:flex-1 after:h-[1px] after:bg-border after:max-w-[80px]">
-          07 — Get In Touch
-        </div>
         <h2 className="font-display text-[clamp(36px,5vw,60px)] text-white tracking-[2px] mb-6 leading-[1]">
-          LET&apos;S WORK<br />TOGETHER
+          Work With Me
         </h2>
         <p className="text-muted text-[16px] mb-10 leading-[1.7]">
           Need a penetration test, security audit, or bug bounty collaboration? I bring thoroughness, professionalism, and a hacker&apos;s eye to every engagement.

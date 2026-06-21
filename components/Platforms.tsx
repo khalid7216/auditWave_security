@@ -1,11 +1,8 @@
 export default function Platforms() {
   return (
     <section id="platforms" className="py-[100px] px-6 md:px-12 max-w-[1200px] mx-auto border-t border-border">
-      <div className="font-mono text-[11px] text-accent2 tracking-[3px] uppercase mb-3 flex items-center gap-3 after:content-[''] after:flex-1 after:h-[1px] after:bg-border after:max-w-[80px]">
-        06 — Active On
-      </div>
       <h2 className="font-display text-[clamp(36px,5vw,60px)] text-white tracking-[2px] mb-12 leading-[1]">
-        BUG BOUNTY<br />PLATFORMS
+        Bug Bounty<br />Platforms
       </h2>
       
       <div className="flex gap-6 flex-wrap">

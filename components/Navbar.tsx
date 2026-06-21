@@ -16,14 +16,14 @@ export default function Navbar() {
         />
       </Link>
       <ul className="hidden md:flex gap-7 list-none m-0 p-0">
-        <li><Link href="#skills" className="font-mono text-[11px] text-muted no-underline tracking-[1px] uppercase transition-colors duration-200 hover:text-accent">Skills</Link></li>
-        <li><Link href="#timeline" className="font-mono text-[11px] text-muted no-underline tracking-[1px] uppercase transition-colors duration-200 hover:text-accent">Journey</Link></li>
-        <li><Link href="#vulns" className="font-mono text-[11px] text-muted no-underline tracking-[1px] uppercase transition-colors duration-200 hover:text-accent">Vulns</Link></li>
-        <li><Link href="#hall" className="font-mono text-[11px] text-muted no-underline tracking-[1px] uppercase transition-colors duration-200 hover:text-accent">Hall of Fame</Link></li>
-        <li><Link href="#certs" className="font-mono text-[11px] text-muted no-underline tracking-[1px] uppercase transition-colors duration-200 hover:text-accent">Certs</Link></li>
-        <li><Link href="/services" className="font-mono text-[11px] text-muted no-underline tracking-[1px] uppercase transition-colors duration-200 hover:text-accent">Security Packages</Link></li>
-        <li><Link href="/blog" className="font-mono text-[11px] text-muted no-underline tracking-[1px] uppercase transition-colors duration-200 hover:text-accent">Blog</Link></li>
-        <li><Link href="#contact" className="font-mono text-[11px] text-muted no-underline tracking-[1px] uppercase transition-colors duration-200 hover:text-accent">Contact</Link></li>
+        <li><Link href="#skills" className="font-mono text-[11px] text-muted no-underline tracking-[1px] transition-colors duration-200 hover:text-accent">Skills</Link></li>
+        <li><Link href="#timeline" className="font-mono text-[11px] text-muted no-underline tracking-[1px] transition-colors duration-200 hover:text-accent">Timeline</Link></li>
+        <li><Link href="#vulns" className="font-mono text-[11px] text-muted no-underline tracking-[1px] transition-colors duration-200 hover:text-accent">Vulnerabilities</Link></li>
+        <li><Link href="#hall" className="font-mono text-[11px] text-muted no-underline tracking-[1px] transition-colors duration-200 hover:text-accent">Hall of Fame</Link></li>
+        <li><Link href="#certs" className="font-mono text-[11px] text-muted no-underline tracking-[1px] transition-colors duration-200 hover:text-accent">Certs</Link></li>
+        <li><Link href="/services" className="font-mono text-[11px] text-muted no-underline tracking-[1px] transition-colors duration-200 hover:text-accent">Packages</Link></li>
+        <li><Link href="/blog" className="font-mono text-[11px] text-muted no-underline tracking-[1px] transition-colors duration-200 hover:text-accent">Blog</Link></li>
+        <li><Link href="#contact" className="font-mono text-[11px] text-muted no-underline tracking-[1px] transition-colors duration-200 hover:text-accent">Contact</Link></li>
       </ul>
     </nav>
   );

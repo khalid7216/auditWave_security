@@ -26,11 +26,8 @@ export default function BlogListing() {
         />
 
         <header className="mb-16">
-          <div className="font-mono text-[11px] text-accent2 tracking-[3px] uppercase mb-3 flex items-center gap-3 after:content-[''] after:flex-1 after:h-[1px] after:bg-border after:max-w-[80px]">
-            08 — Blog Archives
-          </div>
           <h1 className="font-display text-[clamp(40px,8vw,80px)] text-white tracking-[2px] mb-6 leading-[0.9]">
-            SECURITY<br /><span className="text-accent">ARCHIVES</span>
+            Security<br /><span className="text-slate-300">Archives</span>
           </h1>
           <p className="text-muted text-[18px] max-w-[600px] leading-[1.7]">
             Detailed writeups on vulnerabilities, methodology reveals, and the latest trends in web penetration testing.
@@ -41,20 +38,20 @@ export default function BlogListing() {
           {posts.map((post) => (
             <article 
               key={post.slug}
-              className="group relative bg-[#0d1117] border border-border p-8 rounded-[4px] transition-all duration-300 hover:border-accent/40 hover:-translate-y-2 flex flex-col h-full"
+              className="group relative bg-[#0d1117] border border-border p-8 rounded-[4px] transition-all duration-300 hover:border-slate-600 hover:-translate-y-2 flex flex-col h-full"
             >
               <div className="flex items-center gap-4 mb-6">
                 <div className="flex items-center gap-1.5 font-mono text-[10px] text-muted uppercase tracking-[1px]">
-                  <Calendar size={12} className="text-accent" />
+                  <Calendar size={12} className="text-slate-400" />
                   {post.date}
                 </div>
                 <div className="flex items-center gap-1.5 font-mono text-[10px] text-muted uppercase tracking-[1px]">
-                  <Clock size={12} className="text-accent" />
+                  <Clock size={12} className="text-slate-400" />
                   {post.readingTime}
                 </div>
               </div>
 
-              <h2 className="font-display text-[24px] text-white tracking-[1px] mb-4 group-hover:text-accent transition-colors">
+              <h2 className="font-display text-[24px] text-white tracking-[1px] mb-4 group-hover:text-slate-300 transition-colors">
                 <Link href={`/blog/${post.slug}`}>{post.title}</Link>
               </h2>
 
@@ -66,7 +63,7 @@ export default function BlogListing() {
                 {post.tags.map((tag) => (
                   <span 
                     key={tag}
-                    className="flex items-center gap-1 font-mono text-[9px] text-accent border border-accent/20 bg-accent/5 px-2 py-1 rounded-[2px]"
+                    className="bg-slate-800 text-slate-400 text-xs px-2 py-0.5 rounded border-0"
                   >
                     <Tag size={10} />
                     {tag}
@@ -76,15 +73,15 @@ export default function BlogListing() {
 
               <Link 
                 href={`/blog/${post.slug}`}
-                className="inline-flex items-center gap-2 font-mono text-[11px] font-bold text-accent uppercase tracking-[2px] transition-all group/link"
+                className="inline-flex items-center gap-2 font-mono text-[11px] font-bold text-slate-300 tracking-[2px] transition-all group/link"
               >
-                Read Full Exposure
+                Read Article
                 <ArrowRight size={14} className="transition-transform group-hover/link:translate-x-1" />
               </Link>
               
               {/* Decorative accent corner */}
               <div className="absolute top-0 right-0 w-8 h-8 pointer-events-none overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity">
-                <div className="absolute top-0 right-0 w-[40px] h-[1px] bg-accent rotate-45 translate-x-[15px] -translate-y-[5px]"></div>
+                <div className="absolute top-0 right-0 w-[40px] h-[1px] bg-slate-600 rotate-45 translate-x-[15px] -translate-y-[5px]"></div>
               </div>
             </article>
           ))}

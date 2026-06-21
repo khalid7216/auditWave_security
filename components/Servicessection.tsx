@@ -23,7 +23,7 @@ type Package = {
 const packages: Package[] = [
   {
     id: "basic",
-    tier: "01 — Basic",
+    tier: "Basic",
     name: "Surface Recon",
     tagline: "Quick exposure check for any business website.",
     price: 49,
@@ -44,14 +44,14 @@ const packages: Package[] = [
   },
   {
     id: "pro",
-    tier: "02 — Pro",
+    tier: "Pro",
     name: "Web App Pentest",
     tagline: "Full manual testing for sites with logins or user data.",
     price: 149,
     delivery: "5–7 days",
     ideal: "SaaS tools, e-commerce, membership sites, admin panels",
     featured: true,
-    accentColor: "#00d4ff",
+    accentColor: "#94a3b8",
     features: [
       { label: "Everything in Basic", included: true },
       { label: "OWASP Top 10 manual testing", included: true },
@@ -65,14 +65,14 @@ const packages: Package[] = [
   },
   {
     id: "premium",
-    tier: "03 — Premium",
+    tier: "Premium",
     name: "Deep Dive Audit",
     tagline: "Authenticated testing across all roles and endpoints.",
     price: 249,
     delivery: "7–10 days",
     ideal: "SaaS with user accounts, multi-role apps, pre-launch startups",
     featured: false,
-    accentColor: "#00d4ff",
+    accentColor: "#94a3b8",
     features: [
       { label: "Everything in Pro", included: true },
       { label: "API endpoint security testing", included: true },
@@ -86,7 +86,7 @@ const packages: Package[] = [
   },
   {
     id: "full",
-    tier: "04 — Full Audit",
+    tier: "Full Audit",
     name: "Complete Security Audit",
     tagline: "End-to-end engagement with re-test & certificate.",
     price: 399,
@@ -151,11 +151,8 @@ export default function ServicesSection() {
 
         {/* Header */}
         <div className="mb-14">
-          <p className="text-[#00d4ff] text-xs tracking-[0.18em] uppercase font-medium mb-3">
-            08 — Services
-          </p>
           <h2 className="text-5xl font-bold text-white tracking-tight leading-none mb-4">
-            SECURITY<br />PACKAGES
+            Security<br />Packages
           </h2>
           <p className="text-[#555570] text-sm">
             Transparent pricing. No hidden fees. Pick what fits your business.
@@ -177,17 +174,17 @@ export default function ServicesSection() {
                 style={{
                   background: isFeatured ? "#0d0d1f" : "#0f0f1a",
                   border: isFeatured
-                    ? "1px solid #00d4ff"
+                    ? "1px solid #475569"
                     : isHovered
                     ? "1px solid #2a2a45"
                     : "1px solid #1a1a2e",
                 }}
               >
-                {/* Most Popular Badge */}
+                {/* Featured Badge */}
                 {isFeatured && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                    <span className="bg-[#00d4ff] text-[#0a0a0f] text-[10px] font-bold tracking-widest uppercase px-4 py-1 rounded-full whitespace-nowrap">
-                      Most Popular
+                    <span className="bg-slate-800 text-slate-300 text-[10px] font-bold tracking-widest px-4 py-1 rounded-full whitespace-nowrap">
+                      Most Chosen
                     </span>
                   </div>
                 )}
@@ -223,7 +220,7 @@ export default function ServicesSection() {
                   className="text-[11px] leading-relaxed mb-4 px-3 py-2 rounded-md"
                   style={{
                     background: "#0a0a14",
-                    borderLeft: `2px solid ${isFeatured ? "#00d4ff33" : "#1a1a2e"}`,
+                    borderLeft: `2px solid ${isFeatured ? "#475569" : "#1a1a2e"}`,
                     color: "#444460",
                   }}
                 >
@@ -254,6 +251,10 @@ export default function ServicesSection() {
                   ))}
                 </ul>
 
+                <p className="text-xs text-slate-500 mt-4">
+                  All engagements include responsible disclosure and a signed NDA on request.
+                </p>
+
                 {/* CTA */}
                 <a
                   href="#contact"
@@ -279,10 +280,6 @@ export default function ServicesSection() {
           })}
         </div>
 
-        {/* Footer Note */}
-        <p className="text-center text-[#333350] text-xs mt-10">
-          All engagements include responsible disclosure and a signed NDA on request.
-        </p>
       </div>
     </section>
   );
